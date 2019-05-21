@@ -1,3 +1,11 @@
+"""
+
+List Operations examples.
+@author: Akshit Gupta
+
+"""
+
+
 list_1 = ['Stats', 'Programming', 2016, 2017, 2018]
 list_2 = [10, 1, 2, 3, 4, 5, 6, 7]
 
