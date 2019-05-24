@@ -1,3 +1,8 @@
+"""
+Dictionary Operations
+author: Akshit Gupta <akshitgupta29@gmail.com>
+"""
+
 Dict = {"Name": "Akshit", 'Age':25, 'Company':"MF"}
 print (Dict)
 

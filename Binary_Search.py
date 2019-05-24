@@ -1,6 +1,6 @@
 """
 Binary Search Program
-author: Akshit Gupta
+author: Akshit Gupta <akshitgupta29@gmail.com>
 """
 
 #Bianry Search Function

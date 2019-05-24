@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
+"""
+Class Inhertiance Program
+author: Akshit Gupta <akshitgupta29@gmail.com>
 """
 
 class Coin:

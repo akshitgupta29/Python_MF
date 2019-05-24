@@ -1,3 +1,8 @@
+"""
+Python Basics
+author: Akshit Gupta <akshitgupta29@gmail.com>
+"""
+
 import numpy as np
 
 """Python Basics"""

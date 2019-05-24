@@ -1,7 +1,7 @@
 """
 
 List Operations examples.
-@author: Akshit Gupta
+@author: Akshit Gupta <akshitgupta29@gmail.com>
 
 """
 
