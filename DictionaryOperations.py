@@ -13,3 +13,10 @@ print ('Length of the dictionary', len(Dict))
 
 dict1 = {'Name': 'Raja Raja', 'Age': 6}
 
+print ("Equivalent dict in string", str(dict1))
+dct = dict1.copy()
+print (dct)
+
+
+print ("value is", dict1.get('Age'))
+print (dict1.items())
