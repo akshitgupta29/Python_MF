@@ -3,9 +3,7 @@ Python Basics
 author: Akshit Gupta <akshitgupta29@gmail.com>
 """
 
-import numpy as np
 
-"""Python Basics"""
 
 list1 = [1,2,3]
 list1
