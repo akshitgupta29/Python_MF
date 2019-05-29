@@ -1,3 +1,7 @@
+import pandas as pd
+import numpy as np
+
+
 """
 #Pandas are well suited for tabular data with heterogeneously typed columns, as in an
 #SQL table or Excel spreadsheet.
@@ -10,10 +14,6 @@
 #values
 
 """
-
-import pandas as pd
-import numpy as np
-
 
 s = pd.Series ([1,2,3,np.nan, 5,6], index = ['a', 'b', 'c','c', 'e', 'f'])
 
