@@ -104,6 +104,25 @@ income.iloc [0:5,[4,5,6]] # first 5 rows and 5th, 6th, 7th columns of data frame
 #nunique( ) shows the number of unique values.
 income.Index.nunique()
 
+#Extract Unique Values
+#shows the unique levels or categories in the dataset.
+income.Index.unique()
+
+#Cross Tab
+#pd.crosstab( ) is used to create a frequency distribution
+pd.crosstab(income.Index, income.State)
+
+#Creating a frequency distribution
+
+#income.Index selects the 'Index' column 
+#and value_counts( ) creates a frequency distribution.
+income.Index.value_counts(ascending=True)
+income.Index.value_counts() #Bydefault = False
+
+
+
+
+
 
 
 
