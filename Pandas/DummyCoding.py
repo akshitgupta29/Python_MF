@@ -78,8 +78,16 @@ pd.get_dummies(iris, columns=["Species"], drop_first=True).columns
 #to rank the Sepal.Length for different species in ascending order
 #Using cumsum( ) function ONE can obtain the cumulative sum
 iris['Rank'] = iris['Sepal.Length'].rank(ascending=True)
+iris.sort_values("Rank",ascending=True)
 iris.columns
 iris.head()
+
+#Trial to it in descending order.
+iris['Rank_Desc'] = iris['Sepal.Length'].rank()
+iris.sort_values("Rank_Desc", ascending=False)
+
+
+
 
 
 
