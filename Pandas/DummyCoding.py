@@ -86,6 +86,11 @@ iris.head()
 iris['Rank_Desc'] = iris['Sepal.Length'].rank()
 iris.sort_values("Rank_Desc", ascending=False)
 
+#Transpose the value
+iris.describe().T
+
+
+
 
 
 
