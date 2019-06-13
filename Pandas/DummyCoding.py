@@ -77,6 +77,7 @@ pd.get_dummies(iris, columns=["Species"], drop_first=True).columns
 #Ranking by a specific variable
 #to rank the Sepal.Length for different species in ascending order
 #Using cumsum( ) function ONE can obtain the cumulative sum
+#Notice equal values has been assigned a rank which is the average of their ranks.
 iris['Rank'] = iris['Sepal.Length'].rank(ascending=True)
 iris.sort_values("Rank",ascending=True)
 iris.columns
@@ -89,6 +90,35 @@ iris.sort_values("Rank_Desc", ascending=False)
 #Transpose the value
 iris.describe().T
 
+#Cumcount(): Number each item in each group from 0 to the length of that group - 1.
+iris['Rank'] = iris.sort_values(['Sepal.Length'], ascending=True).groupby(['Species']).cumcount()+1
+iris.head()
+iris.sort_values(["Sepal.Length","Rank"], ascending=True)
+iris.sort_values(["Rank"], ascending=True)
+iris
+
+#AlternatiEngineery
+iris['Rank2'] = iris['Sepal.Length'].groupby(iris["Species"]).rank(ascending=1)
+iris.head()
+
+#Calculating the Cumulative sum
+#Using cumsum( ) function ONE can obtain the cumulative sum
+iris['cum_sum'] = iris["Sepal.Length"].cumsum()
+iris.head()
+
+#Cumulative sum by a variable
+#To find the cumulative sum of sepal lengths for different species 
+#use groupby( ) and then use cumsum( )
+iris['cumsum2'] = iris.groupby('Species')['Sepal.Length'].cumsum()
+iris.head()
+iris
+iris.groupby('Species').head()
+
+#Calculating the percentiles.
+#quantiles can be obtained by using quantile( )
+iris.quantile()
+iris.quantile(0.5)
+iris.quantile([.1,.2,.5])
 
 
 
