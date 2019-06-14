@@ -30,3 +30,5 @@ pd.read_csv('C:\\Users\\guptaksh.CORPDOM\\Desktop\\Self_Learning\\MF_Python\\Sel
 pd.read_csv('C:\\Users\\guptaksh.CORPDOM\\Desktop\\Self_Learning\\MF_Python\\Self_code\\Pandas\\Data\\titanic.csv', header=0, usecols=["survived", "pclass", "sex", "age"])
 
 
+
+
